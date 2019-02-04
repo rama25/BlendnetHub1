@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BlendnetHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlendnetHub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NX-yN-pR4">
+                                <rect key="frame" x="137.5" y="40" width="100.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XQe-9d-uv4">
+                                <rect key="frame" x="147" y="258.5" width="81" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUh-Jt-GtL">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="30"/>
+                                        <state key="normal" title="Xbox"/>
+                                        <connections>
+                                            <action selector="xboxAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rDU-eS-VMN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1w8-3z-rjt">
+                                        <rect key="frame" x="0.0" y="30" width="81" height="30"/>
+                                        <state key="normal" title="Surface Pro"/>
+                                        <connections>
+                                            <action selector="surfaceproAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="94W-3P-OkW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZU-uR-IJR">
+                                        <rect key="frame" x="0.0" y="60" width="81" height="30"/>
+                                        <state key="normal" title="Holo Lens"/>
+                                        <connections>
+                                            <action selector="hololensAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2LJ-Pr-Y8n"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNY-Sb-MLh">
+                                        <rect key="frame" x="0.0" y="90" width="81" height="30"/>
+                                        <state key="normal" title="Bahubali"/>
+                                        <connections>
+                                            <action selector="bahubaliAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fup-pY-DoQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2t-Bn-b0L">
+                                        <rect key="frame" x="0.0" y="120" width="81" height="30"/>
+                                        <state key="normal" title="Mufti"/>
+                                        <connections>
+                                            <action selector="muftiAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v0n-GZ-N5s"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3NX-yN-pR4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="09f-Fm-lkw"/>
+                            <constraint firstItem="XQe-9d-uv4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9xZ-Cg-cfR"/>
+                            <constraint firstItem="3NX-yN-pR4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bP7-vP-A6T"/>
+                            <constraint firstItem="XQe-9d-uv4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rmb-e6-967"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bahubali" destination="gNY-Sb-MLh" id="Un6-yd-Pcd"/>
+                        <outlet property="hololens" destination="iZU-uR-IJR" id="6y9-hG-fR3"/>
+                        <outlet property="mufti" destination="M2t-Bn-b0L" id="eNi-zU-gd0"/>
+                        <outlet property="surfacepro" destination="1w8-3z-rjt" id="9DN-nS-5d6"/>
+                        <outlet property="xbox" destination="KUh-Jt-GtL" id="YQt-An-l2d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Activity Controller-->
+        <scene sceneID="sJz-kE-O4i">
+            <objects>
+                <viewController id="a8O-QX-feQ" customClass="ActivityController" customModule="BlendnetHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c76-cH-IiS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fGY-Lk-CAv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHx-kb-a4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="27"/>
+        </scene>
+    </scenes>
+</document>
